@@ -1,8 +1,8 @@
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Card, CardAction, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { creditBenefits, features } from "@/lib/data";
-import { ArrowRight, Stethoscope } from "lucide-react";
+import { features } from "@/lib/data";
+import { ArrowRight } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -123,90 +123,12 @@ export default function Home() {
 
           {/* Pricing table of Clerk Subscription  */}
           <div>
-            {/* Price Table */}
+            
 
             {/* Description of Working of Credits based subscription Model  */}
-            <Card className="mt-12 bg-muted/20 border-emerald-900/30">
-              <CardHeader>
-                <CardTitle className="text-xl font-semibold text-white flex items-center">
-                  <Stethoscope className="h-5 w-5 mr-2 text-emerald-400" />
-                  How Our Credit System Works
-                </CardTitle>
-              </CardHeader>
-              <CardContent>
-                <ul className="space-y-3">
-                  {creditBenefits.map((benefit, index) => (
-                    <li key={index} className="flex items-start">
-                      <div className="mr-3 mt-1 bg-emerald-900/20 p-1 rounded-full">
-                        <svg
-                          className="h-4 w-4 text-emerald-400"
-                          fill="none"
-                          stroke="currentColor"
-                          viewBox="0 0 24 24"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            strokeWidth="2"
-                            d="M5 13l4 4L19 7"
-                          ></path>
-                        </svg>
-                      </div>
-                      <p
-                        className="text-muted-foreground"
-                        dangerouslySetInnerHTML={{ __html: benefit }}
-                      />
-                    </li>
-                  ))}
-                </ul>
-              </CardContent>
-            </Card>
+            
           
           </div>
-        </div>
-      </section>
-
-
-
-      {/* CTA section */}
-      <section className="py-20">
-        <div className="container mx-auto px-4">
-          <Card className="bg-gradient-to-r from-emerald-900/30 to-emerald-950/20 border-emerald-800/20">
-            <CardContent className="p-8 md:p-12 lg:p-16 relative overflow-hidden">
-              <div className="max-w-2xl relative z-10">
-                <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
-                  Ready to take control of your healthcare?
-                </h2>
-                <p className="text-lg text-muted-foreground mb-8">
-                  Join thousands of users who have simplified their healthcare
-                  journey with our platform. Get started today and experience
-                  healthcare the way it should be.
-                </p>
-                <div className="flex flex-col sm:flex-row gap-4">
-                  <Button
-                    asChild
-                    size="lg"
-                    className="bg-emerald-600 text-white hover:bg-emerald-700"
-                  >
-                    <Link href="/sign-up">Sign Up Now</Link>
-                  </Button>
-                  <Button
-                    asChild
-                    variant="outline"
-                    size="lg"
-                    className="border-emerald-700/30 hover:bg-muted/80"
-                  >
-                    <Link href="#pricing">View Pricing</Link>
-                  </Button>
-                </div>
-              </div>
-
-              {/* Decorative healthcare elements */}
-              <div className="absolute right-0 top-0 w-[300px] h-[300px] bg-emerald-800/10 rounded-full blur-3xl -mr-20 -mt-20"></div>
-              <div className="absolute left-0 bottom-0 w-[200px] h-[200px] bg-emerald-700/10 rounded-full blur-3xl -ml-10 -mb-10"></div>
-            </CardContent>
-          </Card>
         </div>
       </section>
     </div>
