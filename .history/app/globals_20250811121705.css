@@ -123,7 +123,7 @@
 
 
 
-@utility gradient{
+.gradient{
   @apply bg-gradient-to-b from-emerald-500 to-teal-400;
 }
 
