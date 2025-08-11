@@ -5,7 +5,7 @@ import Link from 'next/link'
 import React from 'react'
 import { Button } from './ui/button'
 import { checkUser } from '@/lib/checkUser'
-import { Calendar, ShieldCheck, Stethoscope, User } from 'lucide-react'
+import { Calendar, Stethoscope, User } from 'lucide-react'
 
 
 const Header = async() => {
