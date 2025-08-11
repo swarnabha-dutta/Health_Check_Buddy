@@ -1,7 +1,7 @@
 import Pricing from "@/components/Pricing";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Card, CardAction, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { creditBenefits, features } from "@/lib/data";
 import { ArrowRight, Stethoscope } from "lucide-react";
 import Image from "next/image";
@@ -88,7 +88,7 @@ export default function Home() {
                       {feature.icon}
                     </div>
                     <CardTitle className={`text-xl font-semibold text-white`}>{feature.title}
-                    </CardTitle>
+                    </ CardTitle>
                   </CardHeader>
                   <CardContent>
                     <p className="text-muted-foreground">{feature.description}</p>
@@ -124,7 +124,7 @@ export default function Home() {
           </div>
 
           {/* Pricing table of Clerk Subscription  */}
-          <div className="mx-auto">
+          <div>
             {/* Price Table */}
             <Pricing/>
             {/* Description of Working of Credits based subscription Model  */}

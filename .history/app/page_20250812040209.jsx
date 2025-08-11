@@ -88,7 +88,7 @@ export default function Home() {
                       {feature.icon}
                     </div>
                     <CardTitle className={`text-xl font-semibold text-white`}>{feature.title}
-                    </CardTitle>
+                    </ CardTitle>
                   </CardHeader>
                   <CardContent>
                     <p className="text-muted-foreground">{feature.description}</p>
