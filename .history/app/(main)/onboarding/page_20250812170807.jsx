@@ -1,11 +1,11 @@
 "use client";
 
-import React, { useEffect, useState } from 'react'
+import React, { useState } from 'react'
 import { useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
 import z from 'zod';
-import { CardContent, CardDescription, Card, CardTitle } from '@/components/ui/card';
-
+import { CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
+import { Card } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Stethoscope, User } from 'lucide-react';
 import useFetch from '@/hooks/use-fetch';
@@ -59,19 +59,8 @@ const OnboardingPage = () => {
         if (loading) return;
 
         const formData = new FormData();
-
-        formData.append("role", "PATIENT");
-
-        await submitUserRole(formData);
-    };
-
-        useEffect(() => {
-        if (data && data?.success) {
-        router.push(data.redirect);
-        }
-        }, [data]);
-
-
+        
+    }
     if (step == "choose-role") {
         return (
             <div className='grid grid-cols-1 md:grid-cols-2 gap-6 '>
@@ -90,23 +79,23 @@ const OnboardingPage = () => {
                         </CardDescription>
                         <Button
                             className="w-full mt-2 bg-emerald-600 hover:bg-emerald-700 cursor-pointer"
-                            disabled={loading}
+                            // disabled={loading}
                             >
-                            {loading ? (
+                            {/* {loading ? (
                                 <>
                                 <Loader2 className="mr-2 h-4 w-4 animate-spin" />
                                 Processing...
                                 </>
                             ) : (
                                 "Continue as Patient"
-                            )} 
-                            
+                            )} */}
+                            Continue as Patient
                         </Button>
                     </CardContent>
                 </Card>
                 <Card
                     className="border-emerald-900/20 hover:border-emerald-700/40 cursor-pointer transition-all"
-                    onClick={() => !loading && setStep("doctor-form")}
+                    // onClick={() => !loading && setStep("doctor-form")}
                     >
                     <CardContent className="pt-6 pb-6 flex flex-col items-center text-center">
                         <div className="p-4 bg-emerald-900/20 rounded-full mb-4">
@@ -120,8 +109,8 @@ const OnboardingPage = () => {
                         provide consultations
                         </CardDescription>
                         <Button
-                        className="w-full mt-2 bg-emerald-600 hover:bg-emerald-700 cursor-pointer"
-                        disabled={loading}
+                        className="w-full mt-2 bg-emerald-600 hover:bg-emerald-700"
+                        // disabled={loading}
                         >
                         Continue as Doctor
                         </Button>

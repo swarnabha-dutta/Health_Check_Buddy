@@ -4,8 +4,8 @@ import React, { useEffect, useState } from 'react'
 import { useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
 import z from 'zod';
-import { CardContent, CardDescription, Card, CardTitle } from '@/components/ui/card';
-
+import { CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
+import { Card } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Stethoscope, User } from 'lucide-react';
 import useFetch from '@/hooks/use-fetch';
@@ -120,7 +120,7 @@ const OnboardingPage = () => {
                         provide consultations
                         </CardDescription>
                         <Button
-                        className="w-full mt-2 bg-emerald-600 hover:bg-emerald-700 cursor-pointer"
+                        className="w-full mt-2 bg-emerald-600 hover:bg-emerald-700 cursor"
                         disabled={loading}
                         >
                         Continue as Doctor

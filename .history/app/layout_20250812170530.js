@@ -33,7 +33,7 @@ export default function RootLayout({ children }) {
             {children}
             </main>
             
-            <Toaster richColors/>
+            <Toaster/>
           {/* footer */}
           <footer className="bg-muted/50 py-12">
             <div className="container mx-auto py-4 text-center text-gray-200">
