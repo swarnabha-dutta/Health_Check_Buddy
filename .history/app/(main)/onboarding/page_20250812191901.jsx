@@ -74,7 +74,7 @@ export const OnboardingPage = () => {
 
         useEffect(() => {
             if (data && data?.success) {
-                toast.success("Role Selected");
+                toast.suce
                 router.push(data.redirect);
         }
         }, [data]);

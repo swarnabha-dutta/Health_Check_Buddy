@@ -10,14 +10,7 @@ import { Button } from '@/components/ui/button';
 import { Stethoscope, User } from 'lucide-react';
 import useFetch from '@/hooks/use-fetch';
 import { setUserRole } from '@/actions/onboarding';
-import { Label } from '@/components/ui/label';
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
-import { SPECIALTIES } from '@/lib/specialities.js';
-import { Input } from '@/components/ui/input';
-import { Textarea } from '@/components/ui/textarea';
-import { useRouter } from "next/navigation";  
-import { Loader2 } from "lucide-react";     
-import { toast } from 'sonner';
+
 
 const doctorFormSchema = z.object({
     specialty: z.string().min(1, "Specialty is required"),
@@ -35,9 +28,9 @@ const doctorFormSchema = z.object({
     .max(1000, "Description must be less than 1000 characters"),
 
 })
-export const OnboardingPage = () => {
+const OnboardingPage = () => {
     const [step, setStep] = useState("choose-role");
-    const router = useRouter();
+
     const {data,fn:submitUserRole,loading } = useFetch(setUserRole);
     const { register,
         handleSubmit,
@@ -73,32 +66,17 @@ export const OnboardingPage = () => {
     };
 
         useEffect(() => {
-            if (data && data?.success) {
-                toast.success("Role Selected");
-                router.push(data.redirect);
+        if (data && data?.success) {
+        router.push(data.redirect);
         }
         }, [data]);
 
 
-    
-    const onDoctorSubmit = async (data) => {
-        if (loading) return;
-
-        const formData = new FormData();
-        formData.append("role", "DOCTOR");
-        formData.append("specialty", data.specialty);
-        formData.append("experience", data.experience.toString());
-        formData.append("credentialUrl", data.credentialUrl);
-        formData.append("description", data.description);
-
-        await submitUserRole(formData);
-    };
     if (step == "choose-role") {
         return (
             <div className='grid grid-cols-1 md:grid-cols-2 gap-6 '>
                 <Card
-                    className="border-emerald-900/20 hover:border-emerald-700/40 cursor-pointer transition-all"
-                    onClick={() => !loading && handlePatientSelection()}
+                    className="border-emerald-900/20 hover:border-emerald-700/40  transition-all"
                 >
                     <CardContent className="pt-6 pb-6 flex flex-col items-center text-center cursor-pointer">
                         <div className="p-4 bg-emerald-900/20 rounded-full mb-4">
@@ -249,19 +227,19 @@ export const OnboardingPage = () => {
                     type="button"
                     variant="outline"
                     onClick={() => setStep("choose-role")}
-                    className="border-emerald-900/30 cursor-pointer"
+                    className="border-emerald-900/30"
                     disabled={loading}
                 >
                     Back
                 </Button>
                 <Button
                     type="submit"
-                    className="bg-emerald-600 hover:bg-emerald-700 cursor-pointer"
+                    className="bg-emerald-600 hover:bg-emerald-700"
                     disabled={loading}
                 >
                     {loading ? (
                     <>
-                        <Loader2 className="mr-2 h-4 w-4 animate-spin " />
+                        <Loader2 className="mr-2 h-4 w-4 animate-spin" />
                         Submitting...
                     </>
                     ) : (
@@ -274,6 +252,7 @@ export const OnboardingPage = () => {
         </Card>
     );
     }
+    
 }
 
 export default OnboardingPage

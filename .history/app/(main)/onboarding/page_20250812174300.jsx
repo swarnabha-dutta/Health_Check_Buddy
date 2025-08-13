@@ -17,7 +17,6 @@ import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import { useRouter } from "next/navigation";  
 import { Loader2 } from "lucide-react";     
-import { toast } from 'sonner';
 
 const doctorFormSchema = z.object({
     specialty: z.string().min(1, "Specialty is required"),
@@ -37,7 +36,7 @@ const doctorFormSchema = z.object({
 })
 export const OnboardingPage = () => {
     const [step, setStep] = useState("choose-role");
-    const router = useRouter();
+      const router = useRouter();
     const {data,fn:submitUserRole,loading } = useFetch(setUserRole);
     const { register,
         handleSubmit,
@@ -73,9 +72,8 @@ export const OnboardingPage = () => {
     };
 
         useEffect(() => {
-            if (data && data?.success) {
-                toast.success("Role Selected");
-                router.push(data.redirect);
+        if (data && data?.success) {
+        router.push(data.redirect);
         }
         }, [data]);
 
@@ -97,8 +95,7 @@ export const OnboardingPage = () => {
         return (
             <div className='grid grid-cols-1 md:grid-cols-2 gap-6 '>
                 <Card
-                    className="border-emerald-900/20 hover:border-emerald-700/40 cursor-pointer transition-all"
-                    onClick={() => !loading && handlePatientSelection()}
+                    className="border-emerald-900/20 hover:border-emerald-700/40  transition-all"
                 >
                     <CardContent className="pt-6 pb-6 flex flex-col items-center text-center cursor-pointer">
                         <div className="p-4 bg-emerald-900/20 rounded-full mb-4">

@@ -17,7 +17,6 @@ import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import { useRouter } from "next/navigation";  
 import { Loader2 } from "lucide-react";     
-import { toast } from 'sonner';
 
 const doctorFormSchema = z.object({
     specialty: z.string().min(1, "Specialty is required"),
@@ -74,7 +73,7 @@ export const OnboardingPage = () => {
 
         useEffect(() => {
             if (data && data?.success) {
-                toast.success("Role Selected");
+            
                 router.push(data.redirect);
         }
         }, [data]);
