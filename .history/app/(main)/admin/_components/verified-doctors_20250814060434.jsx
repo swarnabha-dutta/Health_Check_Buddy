@@ -6,8 +6,7 @@ import { Input } from '@/components/ui/input';
 import { Badge } from "@/components/ui/badge";
 import useFetch from '@/hooks/use-fetch';
 import {  Ban, Check, Loader2, Search, User } from 'lucide-react';
-import React, { useEffect, useState } from 'react'
-import { toast } from "sonner";
+import React, { useState } from 'react'
 
 export const VerifiedDoctors = ({doctors}) => {
     const [searchTerm, setSearchTerm] = useState("");

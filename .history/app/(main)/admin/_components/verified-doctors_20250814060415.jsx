@@ -6,8 +6,7 @@ import { Input } from '@/components/ui/input';
 import { Badge } from "@/components/ui/badge";
 import useFetch from '@/hooks/use-fetch';
 import {  Ban, Check, Loader2, Search, User } from 'lucide-react';
-import React, { useEffect, useState } from 'react'
-import { toast } from "sonner";
+import React, { useState } from 'react'
 
 export const VerifiedDoctors = ({doctors}) => {
     const [searchTerm, setSearchTerm] = useState("");
@@ -51,13 +50,13 @@ export const VerifiedDoctors = ({doctors}) => {
 
 
     useEffect(() => {
-        if (data?.success && targetDoctor && actionType) {
-        const actionVerb = actionType === "SUSPEND" ? "Suspended" : "Reinstated";
-        toast.success(`${actionVerb} ${targetDoctor.name} successfully!`);
-        setTargetDoctor(null);
-        setActionType(null);
-        }
-    }, [data]);
+    if (data?.success && targetDoctor && actionType) {
+      const actionVerb = actionType === "SUSPEND" ? "Suspended" : "Reinstated";
+      toast.success(`${actionVerb} ${targetDoctor.name} successfully!`);
+      setTargetDoctor(null);
+      setActionType(null);
+    }
+  }, [data]);
     return (
         <div>
             <Card className="bg-muted/20 border-emerald-900/20">
