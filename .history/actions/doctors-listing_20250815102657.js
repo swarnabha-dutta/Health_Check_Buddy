@@ -1,0 +1,24 @@
+"use server";
+
+
+/**
+ * Get doctors by specialty
+ */
+export async function getDoctorsBySpecialty(specialty) {
+    try {
+        
+        const doctors = await db.user.findMany({
+            where: {
+                role: "DOCTOR",
+                verificationStatus: "VERIFIED",
+                specialty: specialty.split("&")[0].trim(),
+            },
+            orderBy: {
+                name: "asc",
+            }
+        })
+    } catch (error) {
+        console.log("Failed to fetch doctors by specialty:", error);
+        return { error: "Failed to fetch doctors" };
+    }
+}
