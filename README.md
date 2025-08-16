@@ -82,7 +82,7 @@
 
 ### 1. Clone the Repository
 
-git clone https://github.com/swarnabha-dutta/healthCheckBuddy
+git clone https://github.com/swarnabha-dutta/Health_Check_Buddy
 cd healthCheckBuddy 
 
 ```bash
