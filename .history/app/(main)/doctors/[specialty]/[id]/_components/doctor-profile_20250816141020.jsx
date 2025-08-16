@@ -102,17 +102,17 @@
 
                     <Button
                     onClick={toggleBooking}
-                    className="w-full bg-emerald-600 hover:bg-emerald-700 mt-4 cursor-pointer"
+                    className="w-full bg-emerald-600 hover:bg-emerald-700 mt-4 cursor-poine"
                     >
                     {showBooking ? (
                         <>
                         Hide Booking
-                        <ChevronUp className="ml-2 h-4 w-4 cursor-pointer" />
+                        <ChevronUp className="ml-2 h-4 w-4" />
                         </>
                     ) : (
                         <>
                         Book Appointment
-                        <ChevronDown className="ml-2 h-4 w-4 cursor-pointer" />
+                        <ChevronDown className="ml-2 h-4 w-4" />
                         </>
                     )}
                     </Button>

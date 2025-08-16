@@ -107,12 +107,12 @@
                     {showBooking ? (
                         <>
                         Hide Booking
-                        <ChevronUp className="ml-2 h-4 w-4 cursor-pointer" />
+                        <ChevronUp className="ml-2 h-4 w-4" />
                         </>
                     ) : (
                         <>
                         Book Appointment
-                        <ChevronDown className="ml-2 h-4 w-4 cursor-pointer" />
+                        <ChevronDown className="ml-2 h-4 w-4" />
                         </>
                     )}
                     </Button>

@@ -2,8 +2,10 @@
 
 import { db } from "@/lib/prisma";
 import { auth } from "@clerk/nextjs/server";
-import { revalidatePath } from "next/cache";
 import { format } from "date-fns";
+import { revalidatePath } from "next/cache";
+
+
 
 // Define credit allocations per plan
 const PLAN_CREDITS = {
@@ -25,15 +27,12 @@ export async function checkAndAllocateCredits(user) {
             return null;
         }
 
-        // Only allocate credits for patients
+        //Only Allocate credits for patients
         if (user.role !== "PATIENT") {
             return user;
         }
-
-        // Check if user has a subscription
         const { has } = await auth();
 
-        // Check which plan the user has
         const hasBasic = has({ plan: "free_user" });
         const hasStandard = has({ plan: "standard" });
         const hasPremium = has({ plan: "premium" });
@@ -51,15 +50,12 @@ export async function checkAndAllocateCredits(user) {
             currentPlan = "free_user";
             creditsToAllocate = PLAN_CREDITS.free_user;
         }
-
         // If user doesn't have any plan, just return the user
         if (!currentPlan) {
             return user;
         }
 
-        // Check if we already allocated credits for this month
         const currentMonth = format(new Date(), "yyyy-MM");
-
         // If there's a transaction this month, check if it's for the same plan
         if (user.transactions.length > 0) {
             const latestTransaction = user.transactions[0];
@@ -67,6 +63,7 @@ export async function checkAndAllocateCredits(user) {
                 new Date(latestTransaction.createdAt),
                 "yyyy-MM"
             );
+
             const transactionPlan = latestTransaction.packageId;
 
             // If we already allocated credits for this month and the plan is the same, just return
@@ -77,7 +74,6 @@ export async function checkAndAllocateCredits(user) {
                 return user;
             }
         }
-
         // Allocate credits and create transaction record
         const updatedUser = await db.$transaction(async (tx) => {
             // Create transaction record
@@ -89,7 +85,6 @@ export async function checkAndAllocateCredits(user) {
                     packageId: currentPlan,
                 },
             });
-
             // Update user's credit balance
             const updatedUser = await tx.user.update({
                 where: {
@@ -101,22 +96,21 @@ export async function checkAndAllocateCredits(user) {
                     },
                 },
             });
-
             return updatedUser;
         });
-
         // Revalidate relevant paths to reflect updated credit balance
         revalidatePath("/doctors");
         revalidatePath("/appointments");
 
         return updatedUser;
+        
     } catch (error) {
-        console.error(
+        console.log(
             "Failed to check subscription and allocate credits:",
             error.message
         );
         return null;
-    }
+    } 
 }
 
 /**

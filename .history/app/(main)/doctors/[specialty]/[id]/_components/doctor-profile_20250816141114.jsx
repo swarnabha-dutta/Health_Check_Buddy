@@ -112,7 +112,7 @@
                     ) : (
                         <>
                         Book Appointment
-                        <ChevronDown className="ml-2 h-4 w-4 cursor-pointer" />
+                        <ChevronDown className="ml-2 h-4 w-4" />
                         </>
                     )}
                     </Button>
