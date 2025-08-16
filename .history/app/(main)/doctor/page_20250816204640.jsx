@@ -6,7 +6,6 @@ import { getDoctorAppointments, getDoctorAvailability } from "@/actions/doctor";
 import DoctorAppointmentsList from "./_components/appointments-list";
 import AvailabilitySettings from "./_components/availability-settings";
 import { getDoctorEarnings, getDoctorPayouts } from "@/actions/payout";
-import { DoctorEarnings } from "./_components/doctor-earnings";
 // import DoctorEarnings from "./_components/doctor-earnings";
 
 

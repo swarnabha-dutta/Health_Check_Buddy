@@ -5,8 +5,7 @@
 import { getDoctorAppointments, getDoctorAvailability } from "@/actions/doctor";
 import DoctorAppointmentsList from "./_components/appointments-list";
 import AvailabilitySettings from "./_components/availability-settings";
-import { getDoctorEarnings, getDoctorPayouts } from "@/actions/payout";
-import { DoctorEarnings } from "./_components/doctor-earnings";
+import { getDoctorPayouts } from "@/actions/payout";
 // import DoctorEarnings from "./_components/doctor-earnings";
 
 
@@ -70,10 +69,10 @@ import { DoctorEarnings } from "./_components/doctor-earnings";
             <AvailabilitySettings slots={availabilityData.slots || []} />
             </TabsContent>
             <TabsContent value="earnings" className="border-none p-0">
-            <DoctorEarnings
+            {/* <DoctorEarnings
                 earnings={earningsData.earnings || {}}
                 payouts={payoutsData.payouts || []}
-            />
+            /> */}
             </TabsContent>
         </div>
         </Tabs>
