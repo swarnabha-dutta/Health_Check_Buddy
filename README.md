@@ -195,8 +195,3 @@ Deploy easily on **Vercel**, **Render**, or **Netlify**.
 🌐 **Portfolio:** Coming soon
 
 ---
-
-> *“Empowering healthcare through code — one appointment at a time.”*
-> — *HealthCheckBuddy Team*
-
-```
