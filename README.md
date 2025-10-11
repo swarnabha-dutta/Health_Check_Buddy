@@ -161,8 +161,8 @@ Deploy easily on **Vercel**, **Render**, or **Netlify**.
 ## 🧩 **Future Enhancements**
 
 * 🧠 AI-powered symptom checker
-* 💳 clerk payment gateway integration
-* 🔔 Email  required for doctors payout  
+* Doctor  can see Patient History through Analytics Dashboard
+* 🔔 Realtime Email & Notifications required for doctors payout,Appointmenst success and failure and reminder before 30 minutes   
 
 ---
 
