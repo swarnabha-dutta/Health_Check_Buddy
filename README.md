@@ -47,7 +47,7 @@ It allows users to explore transparent pricing, book doctor appointments, and co
 ✅ **Doctor Appointment Booking** — Book consultations with verified doctors.  
 ✅ **Transparent Pricing Page** — No hidden charges; every service clearly listed.  
 ✅ **Patient & Doctor Dashboards** — Personalized panels for managing appointments.  
-✅ **Video Consultation Support** — Real-time doctor–patient interaction (WebRTC-ready).  
+✅ **Video Consultation Support** — Real-time doctor–patient interaction (Vonage).  
 ✅ **Secure Authentication** — Protected routes for patients, doctors, and admins.  
 ✅ **Admin Panel** — Manage doctors, payouts, and overall system data.  
 ✅ **Modern UI/UX** — Built with Tailwind CSS & Lucide Icons for a polished interface.
@@ -161,10 +161,8 @@ Deploy easily on **Vercel**, **Render**, or **Netlify**.
 ## 🧩 **Future Enhancements**
 
 * 🧠 AI-powered symptom checker
-* 💳 Stripe payment gateway integration
-* 🔔 Email & SMS appointment notifications
-* 📅 Automated reminders
-* 📊 Doctor-side analytics dashboard
+* 💳 clerk payment gateway integration
+* 🔔 Email  required for doctors payout  
 
 ---
 
@@ -191,7 +189,7 @@ Deploy easily on **Vercel**, **Render**, or **Netlify**.
 
 👤 **Developer:** Swarnabha Dutta
 📧 **Email:** [swarnabhadutta909@gmail.com](mailto:swarnabhadutta909@gmail.com)
-🔗 **LinkedIn:** [linkedin.com/in/swarnabha-dutta](https://linkedin.com/in/swarnabha-dutta)
-🌐 **Portfolio:** Coming soon
+🔗 **LinkedIn:** [linkedin.com/in/swarnabha-dutta]([https://linkedin.com/in/swarnabha-dutta](https://www.linkedin.com/in/swarnabhadutta909/))
+🌐 **Portfolio:** (https://animated-3-d-portfolio.vercel.app/)
 
 ---
