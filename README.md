@@ -25,6 +25,20 @@ It allows users to explore transparent pricing, book doctor appointments, and co
 💡 Focused on **clarity, security, and scalability**
 
 ---
+## 🎥 **Project Demo**
+
+<p align="center">
+  <a href="YOUR_VIDEO_LINK_HERE" target="_blank">
+    <img src="https://img.shields.io/badge/▶️%20Watch%20Project%20Demo-%23FF0000?style=for-the-badge&logo=youtube&logoColor=white" alt="Watch Project Demo" />
+  </a>
+  <br/>
+  <em>Click the badge to watch a full demo walkthrough of HealthCheckBuddy</em>
+</p>
+
+---
+
+
+
 
 ## 🌄 **Preview**
 
