@@ -63,7 +63,38 @@ It allows users to explore transparent pricing, book doctor appointments, and co
 <div align="center">
 
 *Production deployment monitored with Chrome DevTools & Lighthouse*
-
+<table>
+  <tr>
+    <th width="50%">Baseline Metrics</th>
+    <th width="50%">Metrics After Optimization</th>
+  </tr>
+  <tr>
+    <td align="center">
+      <img src="https://github.com/user-attachments/assets/140e3bbb-24da-454a-ac11-7993bb4bfa82" alt="Baseline Performance" width="90%" />
+    </td>
+    <td align="center">
+      <img src="https://github.com/user-attachments/assets/c7e36914-39ca-4183-9b24-821ebe3a2d6b" alt="Optimized Performance" width="90%" />
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <strong>Initial Scores:</strong><br/>
+      • Lighthouse: 82/100<br/>
+      • FCP: 1.2s<br/>
+      • LCP: 1.8s<br/>
+      • Total Blocking Time: 20ms<br/>
+      • Speed Index: 3.5s
+    </td>
+    <td>
+      <strong>After Feature Integration:</strong> ⚡<br/>
+      • Lighthouse: 93.5/100<br/>
+      • FCP: 0.3s<br/>
+      • LCP: 0.6s<br/>
+      • Total Blocking Time: 0ms<br/>
+      • Speed Index: 1.1s
+    </td>
+  </tr>
+</table>
 ### 🎯 Lighthouse Audit Results
 
 <table>
