@@ -63,6 +63,7 @@ It allows users to explore transparent pricing, book doctor appointments, and co
 <div align="center">
 
 *Production deployment monitored with Chrome DevTools & Lighthouse*
+
 <table>
   <tr>
     <th width="50%">Baseline Metrics</th>
@@ -95,7 +96,8 @@ It allows users to explore transparent pricing, book doctor appointments, and co
     </td>
   </tr>
 </table>
-### 🎯 Lighthouse Audit Results
+
+### 🎯 Lighthouse Audit Results (Avg) 
 
 <table>
   <tr>
@@ -105,27 +107,27 @@ It allows users to explore transparent pricing, book doctor appointments, and co
   </tr>
   <tr>
     <td><strong>Performance</strong></td>
-    <td>82/100</td>
+    <td>87.5/100</td>
     <td>✅ Good</td>
   </tr>
   <tr>
     <td><strong>First Contentful Paint</strong></td>
-    <td>0.3s</td>
+    <td>0.7s</td>
     <td>✅ Excellent</td>
   </tr>
   <tr>
     <td><strong>Largest Contentful Paint</strong></td>
-    <td>0.6s</td>
+    <td>1.2s</td>
     <td>✅ Excellent</td>
   </tr>
   <tr>
     <td><strong>Speed Index</strong></td>
-    <td>1.1s</td>
+    <td>2.3s</td>
     <td>✅ Good</td>
   </tr>
   <tr>
     <td><strong>Total Blocking Time</strong></td>
-    <td>0ms</td>
+    <td>10ms</td>
     <td>✅ Excellent</td>
   </tr>
   <tr>
