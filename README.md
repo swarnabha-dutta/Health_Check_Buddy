@@ -1,65 +1,46 @@
-## ⚡ **Performance Metrics**
+<h1 align="center">🏥 HealthCheckBuddy</h1>
+
+<p align="center"><em>A Modern Healthcare Consultation Platform — Bridging Patients & Doctors Seamlessly.</em></p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Next.js-000?logo=nextdotjs&logoColor=white" alt="Next.js" />
+  <img src="https://img.shields.io/badge/React-20232a?logo=react&logoColor=61dafb" alt="React" />
+  <img src="https://img.shields.io/badge/Prisma-2D3748?logo=prisma&logoColor=white" alt="Prisma" />
+  <img src="https://img.shields.io/badge/Neon-008cff?logo=postgresql&logoColor=white" alt="Neon" />
+  <img src="https://img.shields.io/badge/Tailwind_CSS-38bdf8?logo=tailwindcss&logoColor=white" alt="Tailwind CSS" />
+  <img src="https://img.shields.io/badge/Node.js-339933?logo=node.js&logoColor=white" alt="Node.js" />
+  <img src="https://img.shields.io/badge/Lucide-000?logo=lucide&logoColor=white" alt="Lucide Icons" />
+</p>
+
+---
+
+## 🚀 **Overview**
+
+**HealthCheckBuddy** is a full-stack healthcare consultation platform built for modern telemedicine.  
+It allows users to explore transparent pricing, book doctor appointments, and connect through secure online consultations — all within a clean, responsive, and accessible interface.
+
+🩺 Designed to simplify healthcare access  
+⚙️ Built with **Next.js, Prisma, and Neon (Postgres)**  
+💡 Focused on **clarity, security, and scalability**
+
+---
+
+## 📸 **Screenshots**
 
 <div align="center">
 
-*Production deployment monitored with Chrome DevTools & Lighthouse*
-
-### 🎯 Lighthouse Audit Results
-
 <table>
   <tr>
-    <th>Metric</th>
-    <th>Score</th>
-    <th>Status</th>
-  </tr>
-  <tr>
-    <td><strong>Performance</strong></td>
-    <td>82/100</td>
-    <td>✅ Good</td>
-  </tr>
-  <tr>
-    <td><strong>First Contentful Paint</strong></td>
-    <td>0.3s</td>
-    <td>✅ Excellent</td>
-  </tr>
-  <tr>
-    <td><strong>Largest Contentful Paint</strong></td>
-    <td>0.6s</td>
-    <td>✅ Excellent</td>
-  </tr>
-  <tr>
-    <td><strong>Speed Index</strong></td>
-    <td>1.1s</td>
-    <td>✅ Good</td>
-  </tr>
-  <tr>
-    <td><strong>Total Blocking Time</strong></td>
-    <td>0ms</td>
-    <td>✅ Excellent</td>
-  </tr>
-  <tr>
-    <td><strong>Cumulative Layout Shift</strong></td>
-    <td>0</td>
-    <td>✅ Perfect</td>
+    <td width="50%">
+      <img src="https://github.com/user-attachments/assets/cfcc9ba6-4a35-4ebc-a604-553f53575e70" alt="Landing Page" width="100%" />
+      <p align="center"><em>🏠 Landing Page & Dashboard</em></p>
+    </td>
+    <td width="50%">
+      <img src="https://github.com/user-attachments/assets/f288155e-f4f4-4cf5-a4dd-696acaa9ae5c" alt="Doctor Interface" width="100%" />
+      <p align="center"><em>📋 Doctor Consultation Interface</em></p>
+    </td>
   </tr>
 </table>
-
-### 🚀 Built-in Optimizations (Next.js + Vercel)
-
-**Framework-level optimizations:**
-- ✅ Automatic image optimization (WebP conversion, responsive images)
-- ✅ Code splitting & lazy loading (route-based chunking)
-- ✅ Static generation for faster page loads
-- ✅ CDN delivery via Vercel Edge Network
-- ✅ Automatic font optimization with next/font
-- ✅ Bundle size optimization (tree shaking, minification)
-
-**Database optimizations:**
-- ✅ Prisma query optimization with selective field fetching
-- ✅ Connection pooling via Neon serverless PostgreSQL
-- ✅ Indexed database queries for faster lookups
-
-*Metrics verified on production deployment using Chrome Lighthouse*
 
 </div>
 
