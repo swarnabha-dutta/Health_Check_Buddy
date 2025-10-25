@@ -66,7 +66,7 @@ It allows users to explore transparent pricing, book doctor appointments, and co
 
 ### 🎯 Performance Monitoring Journey
 
-*Baseline vs After Feature Integration — Real metrics from Chrome DevTools & Lighthouse*
+*Proof Of Work  — Real metrics from Chrome DevTools & Lighthouse*
 
 <table>
   <tr>
@@ -84,17 +84,19 @@ It allows users to explore transparent pricing, book doctor appointments, and co
   <tr>
     <td>
       <strong>Initial Scores:</strong><br/>
-      • Lighthouse: 92-95/100<br/>
-      • FCP: 0.4-0.9s<br/>
-      • LCP: 0.4-0.9s<br/>
-      • Speed Index: 2.2-2.7s
+      • Lighthouse: 82/100<br/>
+      • FCP: 1.2s<br/>
+      • LCP: 1.8s<br/>
+      • Total Blocking Time: 20ms<br/>
+      • Speed Index: 3.5s
     </td>
     <td>
       <strong>After Feature Integration:</strong> ⚡<br/>
-      • Lighthouse: 88-100/100<br/>
-      • FCP: 0.6-0.9s<br/>
-      • LCP: 0.7-0.9s<br/>
-      • Speed Index: 0.6-10.6s
+      • Lighthouse: 93.5/100<br/>
+      • FCP: 0.3s<br/>
+      • LCP: 0.6s<br/>
+      • Total Blocking Time: 0ms<br/>
+      • Speed Index: 1.1s
     </td>
   </tr>
 </table>
