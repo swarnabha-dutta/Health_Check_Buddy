@@ -66,7 +66,7 @@ It allows users to explore transparent pricing, book doctor appointments, and co
 
 ### 🎯 Performance Monitoring Journey
 
-*Proof Of Work  — Real metrics from Chrome DevTools & Lighthouse*
+*Baseline vs After Feature Integration — Real metrics from Chrome DevTools & Lighthouse*
 
 <table>
   <tr>
@@ -104,6 +104,37 @@ It allows users to explore transparent pricing, book doctor appointments, and co
 ✅ *Metrics verified across multiple Chrome DevTools audits for consistency*
 
 </div>
+
+---
+
+## 🗄️ **Database Schema**
+
+<div align="center">
+
+### Entity Relationship Diagram
+
+<img src="./diagrams/ER_Diagram.png" alt="Database Schema - HealthCheckBuddy" width="800"/>
+
+*Built with Prisma ORM - Scalable relational data model for healthcare workflows*
+
+</div>
+
+### 📊 **Core Entities**
+
+| Entity | Purpose | Key Relationships |
+|--------|---------|-------------------|
+| **User** | Patient/Doctor authentication & profiles | → Appointments, Availability, Payouts |
+| **Appointment** | Consultation bookings & scheduling | ← User (Patient/Doctor), → CreditTransaction |
+| **Availability** | Doctor schedule management | ← User (Doctor) |
+| **CreditTransaction** | Payment tracking & financial records | ← Appointment |
+| **Payout** | Doctor earning settlements | ← User (Doctor) |
+
+**Key Design Principles:**
+- 🔐 Secure user authentication with role-based access (Patient/Doctor/Admin)
+- 💳 Comprehensive transaction tracking for transparency
+- 📅 Flexible availability system for doctor scheduling
+- 🎥 Video consultation integration with session management
+- 💰 Automated payout system for doctor earnings
 
 ---
 
