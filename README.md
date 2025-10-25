@@ -66,8 +66,8 @@ It allows users to explore transparent pricing, book doctor appointments, and co
 
 <table>
   <tr>
-    <th width="50%">Baseline Metrics</th>
-    <th width="50%">Metrics After Optimization</th>
+    <th width="50%">Monitoring No : 1</th>
+    <th width="50%">Monitoring No : 2</th>
   </tr>
   <tr>
     <td align="center">
