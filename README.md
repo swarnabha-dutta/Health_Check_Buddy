@@ -1,4 +1,3 @@
-
 # 🏥 **HealthCheckBuddy**
 
 *A Modern Healthcare Consultation Platform — Bridging Patients & Doctors Seamlessly.*
@@ -25,13 +24,34 @@ It allows users to explore transparent pricing, book doctor appointments, and co
 💡 Focused on **clarity, security, and scalability**
 
 ---
-## 🎥 **Demo Video**
 
-🎥 [Demo Video – HealthCheckBuddy](https://drive.google.com/file/d/1y8wslZZCmL31tTClPxtr81pAAZfposhS/view?usp=drive_link)
+## 📸 **Screenshots**
+
+<div align="center">
+
+### 🏠 Landing Page & Dashboard
+<img width="2128" alt="HealthCheckBuddy Landing Page" src="https://github.com/user-attachments/assets/cfcc9ba6-4a35-4ebc-a604-553f53575e70" />
+
+<br/><br/>
+
+### 📋 Doctor Consultation Interface
+<img width="1445" alt="Doctor Consultation Dashboard" src="https://github.com/user-attachments/assets/f288155e-f4f4-4cf5-a4dd-696acaa9ae5c" />
+
+</div>
 
 ---
 
+## 🎥 **Demo Video**
 
+<div align="center">
+
+[![HealthCheckBuddy Demo](https://img.shields.io/badge/▶️_Watch_Demo-FF0000?style=for-the-badge&logo=youtube&logoColor=white)](https://drive.google.com/file/d/1y8wslZZCmL31tTClPxtr81pAAZfposhS/view?usp=drive_link)
+
+**Click above to watch the full platform walkthrough** 👆
+
+</div>
+
+---
 
 
 ## 🌄 **Preview**
