@@ -324,13 +324,46 @@ Deploy easily on **Vercel**, **Render**, or **Netlify**.
 * ✅ Designed for real-world healthcare workflows
 
 ---
+## 🔄 CI/CD Pipeline
 
-## 🧠 **Learning Outcomes**
+HealthCheckBuddy uses a **fully automated CI/CD pipeline powered by Vercel**, ensuring reliable deployments and a smooth developer workflow — without any manual steps.
 
-* Deep understanding of **Next.js App Router architecture**
-* Real-world integration of **Prisma ORM with Neon DB**
-* Improved **modular frontend design** using ShadCN UI
-* Hands-on experience with **deployment pipelines (Vercel)**
+## 🔄 CI/CD Diagram
+<p align="center">
+  <img src="/diagrams/CI-CD.png" width="750" />
+</p>
+
+### ✔ What Happens on Every Push
+When code is pushed to the connected GitHub repository:
+
+1. **Vercel automatically pulls the latest commit**
+2. **Installs all project dependencies** in a clean sandbox
+3. **Runs linting & type checks** to ensure code quality
+4. **Builds the Next.js + Prisma application**
+5. **Connects to Neon Postgres during the build (if required)**
+6. **Creates a Preview Deployment** for pull requests
+    - Each PR gets its own unique live URL for testing
+7. **Auto-deploys to Production** when changes are merged into `main`
+
+### ✔ Benefits
+- **Zero-downtime production deployments**
+- **Automated previews for every feature branch**
+- **Fast rollback support**
+- **Consistent builds through isolated Vercel environments**
+- **No GitHub Actions or Docker required** — Vercel handles everything
+
+This ensures HealthCheckBuddy remains stable, scalable, and continuously updated with every commit.
+
+---
+
+## 🧠 **Learning Outcomes **
+
+* Mastered **Next.js App Router** with scalable, production-ready architecture
+* Implemented real-world **Prisma ORM + Neon Serverless Postgres** workflow
+* Built a clean, modular UI system using **ShadCN UI + Tailwind CSS**
+* Gained hands-on experience with **Vercel’s automatic CI/CD pipeline** (Preview → Production deploys)
+* Strengthened full-stack skills across **authentication, database modeling, API routes, and UI/UX**
+* Improved understanding of **performance optimization**, Lighthouse metrics, and real monitoring
 
 ---
 
